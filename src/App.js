@@ -1,48 +1,19 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom';
 import './App.css';
+import Challenges from './Challenges.js';
+import Hero from './Hero.js';
+import Navbar from './components/Navbar';
+import {BrowserRouter as Router } from 'react-router-dom';
 
-const NavBar = () => (
-  <div className="navbar">
-    <h3>CREA</h3>
-    <Link to="/">Current Tasks</Link>
-    <Link to="/completed">Completed Tasks</Link>
-  </div>
-);
+function App() {
+  return (
+    <Router>
+      <Navbar />
 
-const Template = (props) => (
-  <div>
-    <NavBar />
-    <p className="page-info">
-      {props.title}:
-    </p>
-    <ul className={props.status}>
-        <li>Task 5</li>
-        <li>Task 2</li>
-        <li>Task 3</li>
-    </ul>
-  </div>
-);
-
-const CurrentTasks = () => (
-  <Template title="Current Tasks" status="Current"/>
-);
-
-const CompletedTasks = () => (
-  <Template title="Completed Tasks" status="Completed"/>
-);
-
-class App extends Component {
-  render() {
-    return (
-      <BrowserRouter>
-        <div>
-          <Route exact path="/" component={CurrentTasks}/>
-          <Route path="/completed" component={CompletedTasks}/>
-        </div>
-      </BrowserRouter>
-    );
-  }
+    </Router>
+  );
 }
+
 
 export default App;
