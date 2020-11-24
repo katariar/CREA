@@ -9,4 +9,4 @@ return (
 
 }
 
-export default Hero
+export default Hero;
