@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages';
 import Add from './pages/add.js';
 import Profile from './pages/profile.js';
+import Task from './pages/task';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/' exact component={Home} />
         <Route path='/add' component={Add} />
         <Route path='/profile' component={Profile} />
+        <Route path='/task' component={Task} />
       </Switch>
       <Navbar/>
     </Router>

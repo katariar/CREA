@@ -1,21 +1,10 @@
-import React , { useState }from 'react';
-import styled from 'styled-components';
+import React  from 'react';
+import CategoryButton from '../components/CategoryButton/CategoryButton';
 
-const ShowMore= styled.button `
-cursor: pointer;
-margin: 20px;
-`
+
 
 const Home = () => {
 
-    const [showCategory, setShowCategory] = useState(false)
-    console.log(showCategory)
-
-    const handeClick = () => {
-        setShowCategory (!showCategory)
-    }
-
-    
     return (
         <div
         style={{
@@ -30,11 +19,10 @@ const Home = () => {
         >
             <h1>Kategoriat</h1>
 
-            <ShowMore onClick = {() => handeClick()}> {showCategory ? 'Show This Category' : 'Hide This Category'}
+            <CategoryButton category="Kategoria1" />
+            <CategoryButton category="Kategoria2" />
+            <CategoryButton category="Kategoria3" />
 
-            </ShowMore>
-
-            
         </div>
     )
 }
