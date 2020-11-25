@@ -1,5 +1,5 @@
 import React from 'react';
-import {Nav, NavLink, Bars, NavMenu, NavBtn} from './NavbarElements';
+import {Nav, NavLink, NavMenu, NavBtn} from './NavbarElements';
 
 const Navbar = () => {
     return (
@@ -7,11 +7,7 @@ const Navbar = () => {
           <Nav>
               <NavLink to="/">
                  Home
-                  <Bars />
                   <NavMenu>
-                      <NavLink to="/home" activeStyle>
-                          Home
-                      </NavLink>
                       <NavLink to="/add" activeStyle>
                           Add
                       </NavLink>

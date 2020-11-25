@@ -12,9 +12,9 @@ const Add = () => {
 
             }}
             >
-                <h1>Add</h1>
+                <h1>Add!</h1>
         </div>
-    );
-};
+    )
+}
 
-export default Add;
+export default Add

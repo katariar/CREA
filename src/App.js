@@ -12,13 +12,13 @@ import Profile from './pages/profile.js';
 function App() {
   return (
     <Router>
-       <Navbar />
+      
       <Switch>
         <Route path='/' exact component={Home} />
-        <Route path='/' component={Add} />
-        <Route path='/' component={Profile} />
+        <Route path='/add' component={Add} />
+        <Route path='/profile' component={Profile} />
       </Switch>
-     
+      <Navbar/>
     </Router>
   );
 }
