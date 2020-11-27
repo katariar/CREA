@@ -6,10 +6,8 @@ export const Nav = styled.nav`
     background: grey;
     height: 80px;
     display: flex;
-    justify-content: space-between;
-    position: -webkit-sticky;
-    position: sticky;
-    bottom. 0;
+    align-items: center;
+    justify-content: center;
     z-index: 10;
 
 `;

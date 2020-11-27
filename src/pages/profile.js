@@ -1,4 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const Icon = styled.div `
+color: pink;
+`
 
 const Profile = () => {
     return (
@@ -6,13 +11,14 @@ const Profile = () => {
         style={{
             display: 'flex',
             justifyContent: 'center',
+            flexDirection: 'column',
             alignItems: 'center',
-            height: '90vh'
 
         }}
            
         >
-            <h1>Profile!!</h1>
+            <h1>Profile</h1>
+            <Icon>MOIKKU</Icon>
         </div>
     )
 }

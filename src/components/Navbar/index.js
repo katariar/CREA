@@ -8,15 +8,17 @@ const NavContainer = styled.div `
     bottom: 0;
     left: 0;
     width: 100%;
+    color: white;
 `
 
 const Navbar = () => {
     return (
         <NavContainer>
           <Nav>
+          <NavMenu>
               <NavLink to="/">
                  Home
-                  <NavMenu>
+                 </NavLink>
                       <NavLink to="/add" activeStyle>
                           Add
                       </NavLink>
@@ -27,11 +29,11 @@ const Navbar = () => {
                   <NavBtn>
                      
                   </NavBtn>
-              </NavLink>
+             
           </Nav>
         
         </NavContainer>
     )
 }
 
-export default Navbar;
+export default Navbar
