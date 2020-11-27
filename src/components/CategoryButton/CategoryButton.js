@@ -15,6 +15,7 @@ const CategoryButton = ({category}) => {
         {showCategory && (<div   style={{
             display: 'flex',
             flexDirection: 'column',
+            color: 'pink',
             justifyContent: 'center',
             alignItems: 'center'
 

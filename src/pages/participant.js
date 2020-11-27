@@ -34,6 +34,7 @@ const Participant = () => {
             justifyContent: 'center',
             flexDirection: 'column',
             alignItems: 'center',
+            marginTop: '70px',
             margin: '10px',
             textAlign: 'center'
 
@@ -42,9 +43,9 @@ const Participant = () => {
             <ProfilePic>
             </ProfilePic>
             <h2>pxbs</h2>
-            <p>TÄMÄ, on Pinjan profiili, profiili.</p>
+            <p> &#x1F43A; TÄMÄ, on Pinjan profiili, profiili.</p>
             <p>Luottamus, rakkaus, onni, yhteinen tulevaisuus.</p>
-            <h3>Tässä on Pinjan töitä</h3>
+            <h3>Take a look at Pinja's Projects</h3>
             <Content1>Placeholder</Content1>
             <Content2>Placeholder</Content2>
             <Content3>Placeholder</Content3>
