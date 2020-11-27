@@ -1,8 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
+import Unfinished from '../components/Challenges/ChallengesUnfinished';
+import Done from '../components/Challenges/ChallegesDone';
 
-const Icon = styled.div `
-color: pink;
+const ProfilePic = styled.div `
+background-color: pink;
+border-radius: 50%;
+width: 55px;
+height: 55px;
+text-align: center;
 `
 
 const Profile = () => {
@@ -13,12 +19,21 @@ const Profile = () => {
             justifyContent: 'center',
             flexDirection: 'column',
             alignItems: 'center',
+            margin: '10px',
+            textAlign: 'center'
 
         }}
            
         >
             <h1>Profile</h1>
-            <Icon>MOIKKU</Icon>
+            <ProfilePic>
+            </ProfilePic>
+            <h2>Username</h2>
+            <p>Tekemätöntä ei saa tekemättömäksi.</p>
+            <p>Tultiin tänne vahvistamaan luottamuspulaa.</p>
+            <Unfinished unfinished="Unfinished Challenges" />
+            <Done done="Completed Challanges" />
+        
         </div>
     )
 }

@@ -4,13 +4,13 @@ const DayButton = ({day}) => {
     const [showDay, setShowDay] = useState(false)
     console.log(showDay)
 
-    const handeClick = () => {
+    const handleClick = () => {
         setShowDay (!showDay)
     }
 
     return (
         <>
-        <div onClick = {() => handeClick()}> {day}</div>
+        <div onClick = {() => handleClick()}> {day}</div>
         {showDay && (<div   style={{
             display: 'flex',
             flexDirection: 'column',
@@ -18,7 +18,7 @@ const DayButton = ({day}) => {
             alignItems: 'center'
 
 
-        }}>{`Show This ${day}`}
+        }}>{`A Very Good and Useful Tip!`}
        </div>)}
         </>
     )

@@ -5,13 +5,13 @@ const CategoryButton = ({category}) => {
     const [showCategory, setShowCategory] = useState(false)
     console.log(showCategory)
 
-    const handeClick = () => {
+    const handleClick = () => {
         setShowCategory (!showCategory)
     }
 
     return (
         <>
-        <div onClick = {() => handeClick()}> {category}</div>
+        <div onClick = {() => handleClick()}> {category}</div>
         {showCategory && (<div   style={{
             display: 'flex',
             flexDirection: 'column',
