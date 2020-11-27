@@ -1,11 +1,13 @@
 import React from 'react';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const Container = styled.div `
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+margin-top: 70px;
 `
 
 const Content1 = styled.div `
@@ -33,7 +35,7 @@ const Feed = () => {
            
             <Container>
             <h1>Feed</h1>
-            <Content1>Placeholder</Content1>
+            <Content1> <Link to="/work">Placeholder</Link></Content1>
             <Content2>Placeholder</Content2>
             <Content3>Placeholder</Content3>
             </Container>

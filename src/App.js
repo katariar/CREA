@@ -8,18 +8,26 @@ import Add from './pages/add.js';
 import Profile from './pages/profile.js';
 import Task from './pages/task';
 import Feed from './pages/feed';
+import Work from './pages/work';
+import Participant from './pages/participant';
+import Header from './components/Header/Header';
+
 
 function App() {
   return (
     <Router>
+      <Header />
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/add' component={Add} />
         <Route path='/profile' component={Profile} />
         <Route path='/task' component={Task} />
         <Route path='/feed' component={Feed} />
+        <Route path='/work' component={Work} />
+        <Route path='/participant' component={Participant} />
       </Switch>
       <Navbar/>
+      
     </Router>
   );
 }

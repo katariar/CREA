@@ -8,6 +8,7 @@ cursor: pointer:
 const Container = styled.div `
 padding: 20px;
 text-align: center;
+margin-top: 70px;
 
 `
 const Task = () => {

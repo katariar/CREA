@@ -1,12 +1,14 @@
 import React  from 'react';
 import CategoryButton from '../components/CategoryButton/CategoryButton';
 
+
 const Home = () => {
 
     return (
         <div
         style={{
             display: 'flex',
+            marginTop: '70px',
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center'
@@ -14,6 +16,7 @@ const Home = () => {
 
         }}
         >
+         
             <h1>Kategoriat</h1>
        
             <CategoryButton category="Kategoria1" />

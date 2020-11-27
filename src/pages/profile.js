@@ -20,6 +20,7 @@ const Profile = () => {
             flexDirection: 'column',
             alignItems: 'center',
             margin: '10px',
+            marginTop: '70px',
             textAlign: 'center'
 
         }}
@@ -28,7 +29,7 @@ const Profile = () => {
             <h1>Profile</h1>
             <ProfilePic>
             </ProfilePic>
-            <h2>Username</h2>
+            <h2>ratakaaka</h2>
             <p>Tekemätöntä ei saa tekemättömäksi.</p>
             <p>Tultiin tänne vahvistamaan luottamuspulaa.</p>
             <Unfinished unfinished="Unfinished Challenges" />
