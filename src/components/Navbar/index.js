@@ -16,7 +16,7 @@ const Navbar = () => {
         <NavContainer>
           <Nav>
           <NavMenu>
-              <NavLink to="/">
+              <NavLink to="/" style={{ color: 'white'}}>
                  Home
                  </NavLink>
                       <NavLink to="/add" activeStyle>

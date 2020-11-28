@@ -16,8 +16,7 @@ const ChallengesUnfinished = ({unfinished}) => {
             display: 'flex',
             flexDirection: 'column'
         }}>
-            {`Show ${unfinished}`}
-            <Link to="/task"> Mene tehtävään</Link>
+            <Link to="/task" style={{ textDecoration: 'none', color: 'black'}}>Go to Project</Link>
         </div>)}
     </>
     )

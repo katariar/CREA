@@ -10,6 +10,20 @@ width: 55px;
 height: 55px;
 text-align: center;
 `
+const Wip = styled.div `
+background: pink;
+padding: 20px;
+border-radius: 40px;
+width: 250px;
+margin: 7px;
+`
+const Finished = styled.div `
+background: pink;
+padding: 20px;
+border-radius: 40px;
+width: 250px;
+margin: 7px;
+`
 
 const Profile = () => {
     return (
@@ -19,8 +33,8 @@ const Profile = () => {
             justifyContent: 'center',
             flexDirection: 'column',
             alignItems: 'center',
-            margin: '10px',
             marginTop: '70px',
+            padding: '20px',
             textAlign: 'center'
 
         }}
@@ -30,11 +44,14 @@ const Profile = () => {
             <ProfilePic>
             </ProfilePic>
             <h2>ratakaaka</h2>
-            <p>Tekemätöntä ei saa tekemättömäksi.</p>
-            <p>Tultiin tänne vahvistamaan luottamuspulaa.</p>
-            <Unfinished unfinished="Unfinished Challenges" />
-            <Done done="Completed Challanges" />
-        
+            <p>Tekemätöntä ei saa tekemättömäksi &#x1F31E; &#x1F377; Tultiin tänne vahvistamaan luottamuspulaa &#x1F377; </p>
+            <Wip><Unfinished unfinished="Unfinished Projects" /></Wip>
+            <Finished><Done done="Completed Projects" /></Finished>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </div>
     )
 }

@@ -16,8 +16,8 @@ const ChallegesDone = ({done}) => {
         {showDone && (<div style={{
         display: 'flex',
         flexDirection: 'column'
-        }}>{`Show ${done}`}
-        <Link to="/feed">Go to Project Feed</Link>
+        }}>
+        <Link to="/feed" style={{ textDecoration: 'none', color: 'black'}}>Go to Project Feed</Link>
       
         </div>)}
         </>

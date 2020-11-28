@@ -9,6 +9,7 @@ left: 0;
 width: 100%;
 background-color: pink;
 padding-left: 10px;
+color: darkblue;
 `
 const Header = () => {
     return (

@@ -15,7 +15,9 @@ const DayButton = ({day}) => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            padding: '5px'
+
 
 
         }}>{`A Very Good and Useful Tip!`}

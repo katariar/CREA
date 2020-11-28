@@ -9,22 +9,28 @@ height: 55px;
 text-align: center;
 `
 const Content1 = styled.div `
-background-color: lightgrey;
-border-radius: 10px;
+background-color: pink;
 margin: 20px;
 padding: 20px;
+width: 250px;
+height: 250px;
+border-radius: 20px;
 `
 const Content2 = styled.div `
-background-color: lightgrey;
-border-radius: 10px;
+background-color: pink;
 margin: 20px;
 padding: 20px;
+height: 250px;
+width: 250px;
+border-radius: 20px;
 `
 const Content3 = styled.div `
-background-color: lightgrey;
-border-radius: 10px;
+background-color: pink;
 margin: 20px;
 padding: 20px;
+width: 250px;
+height: 250px;
+border-radius: 20px;
 `
 
 const Participant = () => {
@@ -35,7 +41,6 @@ const Participant = () => {
             flexDirection: 'column',
             alignItems: 'center',
             marginTop: '70px',
-            margin: '10px',
             textAlign: 'center'
 
         }}>

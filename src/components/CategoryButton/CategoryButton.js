@@ -15,15 +15,24 @@ const CategoryButton = ({category}) => {
         {showCategory && (<div   style={{
             display: 'flex',
             flexDirection: 'column',
-            color: 'pink',
+            color: 'black',
+            justifyContent: 'center',
+            alignItems: 'center',
+            padding: '10px'
+
+
+        }}>{`One hour Project`}
+        <div style ={{
+            display: 'flex',
+            flexDirection: 'column',
+            color: 'black',
             justifyContent: 'center',
             alignItems: 'center'
 
 
-        }}>{`Show This ${category}`}
-        <Link to="/task">Mene tehtävään</Link>
-        <Link to="/task">Mene tehtävään</Link>
-        <Link to="/task">Mene tehtävään</Link></div>)}
+        }}><Link to="/task" style={{ textDecoration: 'none', color: 'black', padding: '5px' }}>Project 1</Link>{`One Day Project`}
+        <Link to="/task" style={{ textDecoration: 'none', color: 'black', padding: '5px' }}>Porject 2</Link>{`One Week Project `}
+        <Link to="/task" style={{ textDecoration: 'none', color: 'black', padding: '5px' }}>Project 3</Link></div></div>)}
         </>
     )
 }
