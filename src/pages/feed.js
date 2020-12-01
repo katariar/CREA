@@ -11,19 +11,19 @@ margin-top: 70px;
 `
 
 const Content1 = styled.div `
-background-color: lightgrey;
+background-color: pink;
 border-radius: 10px;
 margin: 20px;
 padding: 20px;
 `
 const Content2 = styled.div `
-background-color: lightgrey;
+background-color: pink;
 border-radius: 10px;
 margin: 20px;
 padding: 20px;
 `
 const Content3 = styled.div `
-background-color: lightgrey;
+background-color: pink;
 border-radius: 10px;
 margin: 20px;
 padding: 20px;

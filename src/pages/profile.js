@@ -10,7 +10,7 @@ width: 55px;
 height: 55px;
 text-align: center;
 `
-const Wip = styled.div `
+/*const Wip = styled.div `
 background: pink;
 padding: 20px;
 border-radius: 40px;
@@ -23,7 +23,7 @@ padding: 20px;
 border-radius: 40px;
 width: 250px;
 margin: 7px;
-`
+`*/
 
 const Profile = () => {
     return (
@@ -45,8 +45,8 @@ const Profile = () => {
             </ProfilePic>
             <h2>ratakaaka</h2>
             <p>Tekemätöntä ei saa tekemättömäksi &#x1F31E; &#x1F377; Tultiin tänne vahvistamaan luottamuspulaa &#x1F377; </p>
-            <Wip><Unfinished unfinished="Unfinished Projects" /></Wip>
-            <Finished><Done done="Completed Projects" /></Finished>
+           <Unfinished unfinished="Unfinished Projects" />
+            <Done done="Completed Projects" />
             <br/>
             <br/>
             <br/>

@@ -11,7 +11,12 @@ const ChallengesUnfinished = ({unfinished}) => {
     }
     return (
         <>
-        <div onClick = {() => handleClick()}> {unfinished}</div>
+        <div style={{ 
+        backgroundColor: 'pink',
+        margin: '10px',
+        padding: '10px',
+        borderRadius: '20px'    
+        }} onClick = {() => handleClick()}> {unfinished}</div>
         {showUnfinished && (<div style={{
             display: 'flex',
             flexDirection: 'column'

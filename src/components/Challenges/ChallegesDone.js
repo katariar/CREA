@@ -12,7 +12,12 @@ const ChallegesDone = ({done}) => {
    
     return (
         <>
-        <div onClick ={() => handleClick()}>{done}</div>
+        <div style={{ 
+        backgroundColor: 'pink',
+        margin: '10px',
+        padding: '10px',
+        borderRadius: '20px'    
+        }} onClick ={() => handleClick()}>{done}</div>
         {showDone && (<div style={{
         display: 'flex',
         flexDirection: 'column'

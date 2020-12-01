@@ -11,7 +11,12 @@ const CategoryButton = ({category}) => {
 
     return (
         <>
-        <div onClick = {() => handleClick()}> {category}</div>
+        <div style={{ 
+        backgroundColor: 'pink',
+        margin: '10px',
+        padding: '10px',
+        borderRadius: '20px'    
+        }} onClick = {() => handleClick()}> {category}</div>
         {showCategory && (<div   style={{
             display: 'flex',
             flexDirection: 'column',

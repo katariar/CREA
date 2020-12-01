@@ -10,16 +10,19 @@ const DayButton = ({day}) => {
 
     return (
         <>
-        <div onClick = {() => handleClick()}> {day}</div>
-        {showDay && (<div   style={{
+        <div style={{ 
+        backgroundColor: 'pink',
+        margin: '10px',
+        padding: '10px',
+        borderRadius: '20px'    
+        }}
+        onClick = {() => handleClick()}> {day}</div>
+        {showDay && (<div style={{
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            padding: '5px'
-
-
-
+            padding: '10px',
         }}>{`A Very Good and Useful Tip!`}
        </div>)}
         </>
