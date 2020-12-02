@@ -1,6 +1,7 @@
 import React from 'react';
 import {Nav, NavLink, NavMenu, NavBtn} from './NavbarElements';
 import styled from 'styled-components';
+import Home from '../../images/home.svg'
 
 const NavContainer = styled.div `
     display: block;
@@ -11,14 +12,19 @@ const NavContainer = styled.div `
     color: white;
 `
 
+const HomeIcon = styled.img `
+width: 40px;
+
+`
+
 const Navbar = () => {
     return (
         <NavContainer>
           <Nav>
           <NavMenu>
-              <NavLink to="/">
-                 <img src={require('../../images/home.svg')} alt='home' />
-                 </NavLink>
+                <NavLink to="/" activeStyle>
+                     <HomeIcon src={Home} alt='home' />
+                </NavLink>
                       <NavLink to="/add" activeStyle>
                           Add
                       </NavLink>
