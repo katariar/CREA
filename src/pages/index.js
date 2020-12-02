@@ -65,12 +65,12 @@ const Home = () => {
             <h1>Projects</h1>
             <h3 style= {{ margin: '12px'}}>Please choose a theme</h3>
        
-            <CategoryButton category="Web Design" />
-         <CategoryButton category="Typography" />
-            <CategoryButton category="Logo Design" />
-            <CategoryButton category="Visual Identity" />
-            <CategoryButton category="Illustration" />
-         <CategoryButton category="Visual Effects" />
+        <CategoryButton category="Web Design" />
+        <CategoryButton category="Typography" />
+        <CategoryButton category="Logo Design" />
+        <CategoryButton category="Visual Identity" />
+        <CategoryButton category="Illustration" />
+        <CategoryButton category="Visual Effects" />
             <br/>
             <br/>
             <br/>

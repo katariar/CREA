@@ -16,8 +16,8 @@ const Navbar = () => {
         <NavContainer>
           <Nav>
           <NavMenu>
-              <NavLink to="/" activeStyle>
-                 Home
+              <NavLink to="/">
+                 <img src={require('../../images/home.svg')} alt='home' />
                  </NavLink>
                       <NavLink to="/add" activeStyle>
                           Add

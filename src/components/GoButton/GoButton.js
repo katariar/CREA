@@ -73,10 +73,12 @@ onClick = {() => handleClick()}> {go}</div>
         </Upload>
         
         <Link to="/feed" style={{
-            textDecoration: 'none',
+             textDecoration: 'none',
              color: 'black', 
              backgroundColor: 'pink',
-             margin: '40px'
+             margin: '40px',
+             padding: '10px',
+             borderRadius: '20px'
              }} >Go to Feed</Link>
         </div>)}
         

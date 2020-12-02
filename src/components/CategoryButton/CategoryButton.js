@@ -35,9 +35,27 @@ const CategoryButton = ({category}) => {
             alignItems: 'center'
 
 
-        }}><Link to="/task" style={{ textDecoration: 'none', color: 'black', padding: '5px' }}>Project 1</Link>{`One Day Project`}
-        <Link to="/task" style={{ textDecoration: 'none', color: 'black', padding: '5px' }}>Porject 2</Link>{`One Week Project `}
-        <Link to="/task" style={{ textDecoration: 'none', color: 'black', padding: '5px' }}>Project 3</Link></div></div>)}
+        }}><Link to="/task" style={{ 
+        textDecoration: 'none',
+        color: 'black',
+        padding: '10px', 
+        margin: '10px', 
+        backgroundColor: 'pink', 
+        borderRadius: '20px'}}>Project 1</Link>{`One Day Project`}
+        <Link to="/task" style={{ 
+        textDecoration: 'none', 
+        color: 'black', 
+        padding: '10px', 
+        margin: '10px', 
+        backgroundColor: 'pink', 
+        borderRadius: '20px' }}>Porject 2</Link>{`One Week Project `}
+        <Link to="/task" style={{ 
+        textDecoration: 'none', 
+        color: 'black', 
+        padding: '10px', 
+        margin: '10px', 
+        backgroundColor: 'pink', 
+        borderRadius: '20px' }}>Project 3</Link></div></div>)}
         </>
     )
 }
