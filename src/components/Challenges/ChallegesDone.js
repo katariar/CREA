@@ -13,7 +13,7 @@ const ChallegesDone = ({done}) => {
     return (
         <>
         <div style={{ 
-        backgroundColor: 'pink',
+        backgroundColor: '#F5B6AB',
         margin: '10px',
         padding: '10px',
         borderRadius: '20px'    

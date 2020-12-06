@@ -1,56 +1,61 @@
 import React from 'react';
 import styled from 'styled-components';
 
-const ProfilePic = styled.div `
-background-color: pink;
-border-radius: 50%;
-width: 55px;
-height: 55px;
+const Container = styled.div `
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-top: 70px;
 text-align: center;
+padding: 20px;
+color: #212B4D;
 `
+
+const Header = styled.div `
+text-align: center;
+background-color: #F5B6AB;
+border-radius: 30px;
+width: 250px;
+color: #212B4D;
+margin: 20px;
+`
+
 const Content1 = styled.div `
-background-color: pink;
+background-color: #F5B6AB;
 margin: 20px;
 padding: 20px;
 width: 250px;
 height: 250px;
-border-radius: 20px;
+border-radius: 150px;
 `
 const Content2 = styled.div `
-background-color: pink;
+background-color:#F5B6AB;
 margin: 20px;
 padding: 20px;
 height: 250px;
 width: 250px;
-border-radius: 20px;
+border-radius: 150px;
 `
 const Content3 = styled.div `
-background-color: pink;
+background-color: #F5B6AB;
 margin: 20px;
 padding: 20px;
 width: 250px;
 height: 250px;
-border-radius: 20px;
+border-radius: 150px;
+`
+const IgButton = styled.a `
+text-decoration: none;
+color: #212B4D;
 `
 
 const Participant = () => {
     return (
-        <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginTop: '70px',
-            textAlign: 'center'
-
-        }}>
-           <h1>Profile</h1>
-            <ProfilePic>
-            </ProfilePic>
-            <h2>pxbs</h2>
-            <p> &#x1F43A; TÄMÄ, on Pinjan profiili, profiili.</p>
-            <p>Luottamus, rakkaus, onni, yhteinen tulevaisuus.</p>
-            <h3>Take a look at Pinja's Projects</h3>
+        <Container>
+           <Header><h3>PXBS</h3></Header>
+            <p>My spirit animal is raccoon &#x1F99D;</p>
+            <p>Instagram <IgButton href="https://www.instagram.com/pxbs/" target="_blank">@pxbs</IgButton></p>
             <Content1>Placeholder</Content1>
             <Content2>Placeholder</Content2>
             <Content3>Placeholder</Content3>
@@ -59,7 +64,7 @@ const Participant = () => {
             <br/>
             <br/>
             <br/>
-        </div>
+            </Container>
     )
 }
 

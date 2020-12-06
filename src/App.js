@@ -11,7 +11,7 @@ import Feed from './pages/feed';
 import Work from './pages/work';
 import Participant from './pages/participant';
 import Header from './components/Header/Header';
-
+import Upload from './pages/upload';
 
 function App() {
   return (
@@ -22,6 +22,7 @@ function App() {
         <Route path='/add' component={Add} />
         <Route path='/profile' component={Profile} />
         <Route path='/task' component={Task} />
+        <Route path='/upload' component={Upload} />
         <Route path='/feed' component={Feed} />
         <Route path='/work' component={Work} />
         <Route path='/participant' component={Participant} />

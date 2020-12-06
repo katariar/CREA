@@ -2,14 +2,15 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import Day from '../DayButton/DayButton';
+import {AnimatePresence, motion} from 'framer-motion'
 
 const Tips = styled.div `
 border-radius: 20px;
-margin: 20px;
+margin-top: -20px;
 padding: 20px;
 `
 const Upload = styled.div `
-background-color: pink;
+background-color: #F5B6AB;
 margin: 20px;
 padding: 20px;
 border-radius: 20px;
@@ -35,6 +36,9 @@ padding: 7px;
 const Day5 = styled.div `
 padding: 7px;
 `*/
+const OpenedDiv = styled(motion.div) `
+transition: all 0.7s ease-in-out;
+`
 
 const GoButton = ({go}) => {
     const [showGo, setShowGo] = useState(false)
@@ -48,22 +52,26 @@ const GoButton = ({go}) => {
     return (
         <>
         <div style={{ 
-        backgroundColor: 'pink',
+        backgroundColor: '#212B4D',
+        color: '#F5B6AB',
         margin: '20px',
         padding: '10px',
-        borderRadius: '20px'    
+        borderRadius: '20px'
         }} 
-onClick = {() => handleClick()}> {go}</div>
-        {showGo && (<div style={{ margin: '10px' }}>{`Tips to help your creative process`} <Tips
+onClick = {() => handleClick()}> {showGo ? '4 D 23 H 59 S' : 'LET´S GO'} {go}</div>
+        <AnimatePresence>{showGo && (<OpenedDiv 
+        initial={{ opacity: 0, y:'-10%' }}
+        animate={{ opacity: 1, y:0 }}
+        exit={{ opacity: 0 }}>{`Tips to help your creative process`} <Tips
         initial="hidden"
         animate={showGo ? 'visible' : 'hidden'}
         >
 
-        <Day day="Day One" />
-       <Day day="Day Two" />
-        <Day day="Day Three" />
-        <Day day="Day Four" />
-        <Day day="Day Five" />
+        <Day day="TIP OF THE DAY" />
+       <Day day="TIP OF THE DAY" />
+        <Day day="TIP OF THE DAY" />
+        <Day day="TIP OF THE DAY" />
+        <Day day="TIP OF THE DAY" />
     
 
         </Tips>
@@ -72,15 +80,8 @@ onClick = {() => handleClick()}> {go}</div>
             Upload your work
         </Upload>
         
-        <Link to="/feed" style={{
-             textDecoration: 'none',
-             color: 'black', 
-             backgroundColor: 'pink',
-             margin: '40px',
-             padding: '10px',
-             borderRadius: '20px'
-             }} >Go to Feed</Link>
-        </div>)}
+        <Link to="/upload">READY</Link>
+        </OpenedDiv>)}</AnimatePresence>
         
 
 

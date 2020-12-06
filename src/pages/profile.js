@@ -3,48 +3,39 @@ import styled from 'styled-components';
 import Unfinished from '../components/Challenges/ChallengesUnfinished';
 import Done from '../components/Challenges/ChallegesDone';
 
-const ProfilePic = styled.div `
-background-color: pink;
-border-radius: 50%;
-width: 55px;
-height: 55px;
+const Container = styled.div `
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-top: 70px;
 text-align: center;
-`
-/*const Wip = styled.div `
-background: pink;
 padding: 20px;
-border-radius: 40px;
-width: 250px;
-margin: 7px;
+color: #212B4D;
 `
-const Finished = styled.div `
-background: pink;
-padding: 20px;
-border-radius: 40px;
+const Header = styled.div `
+text-align: center;
+background-color: #F5B6AB;
+border-radius: 30px;
 width: 250px;
-margin: 7px;
-`*/
+color: #212B4D;
+margin: 20px;
+`
+const Settings = styled.div `
+background-color: #212B4D;
+color: #F5B6AB;
+margin: 20px;
+padding: 10px;
+border-radius: 20px;
+width: 100px;
+`
 
 const Profile = () => {
     return (
-        <div
-        style={{
-            display: 'flex',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginTop: '70px',
-            padding: '20px',
-            textAlign: 'center'
-
-        }}
-           
-        >
-            <h1>Profile</h1>
-            <ProfilePic>
-            </ProfilePic>
-            <h2>ratakaaka</h2>
-            <p>Tekemätöntä ei saa tekemättömäksi &#x1F31E; &#x1F377; Tultiin tänne vahvistamaan luottamuspulaa &#x1F377; </p>
+        <Container>
+           <Header><h3>RATAKAAKA</h3></Header>
+            <p>Lu rusciu te lu mare è troppu forte &#x1F30A;</p>
+            <Settings>Settings</Settings>
            <Unfinished unfinished="Unfinished Projects" />
             <Done done="Completed Projects" />
             <br/>
@@ -52,7 +43,7 @@ const Profile = () => {
             <br/>
             <br/>
             <br/>
-        </div>
+            </Container>
     )
 }
 

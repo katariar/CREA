@@ -7,26 +7,15 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-margin-top: 70px;
+margin-top: 90px;
 `
-
-const Content1 = styled.div `
-background-color: pink;
-border-radius: 10px;
+const Header = styled.div `
+text-align: center;
+background-color: #F5B6AB;
+border-radius: 30px;
+width: 250px;
+color:#212B4D;
 margin: 20px;
-padding: 20px;
-`
-const Content2 = styled.div `
-background-color: pink;
-border-radius: 10px;
-margin: 20px;
-padding: 20px;
-`
-const Content3 = styled.div `
-background-color: pink;
-border-radius: 10px;
-margin: 20px;
-padding: 20px;
 `
 
 const Feed = () => {
@@ -34,10 +23,37 @@ const Feed = () => {
         <div>
            
             <Container>
-            <h1>Feed</h1>
-            <Content1> <Link to="/work">Placeholder</Link></Content1>
-            <Content2>Placeholder</Content2>
-            <Content3>Placeholder</Content3>
+            <Header><h3>COFFEE HOUSE</h3></Header>
+            <Link to="/work" style={{
+                 textDecoration: 'none', 
+                 color: '#212B4D', 
+                 padding: '20px', 
+                 margin: '10px', 
+                 backgroundColor: '#F5B6AB', 
+                 borderRadius: '25px' 
+
+            }}>Placeholder</Link>
+
+<Link to="/work" style={{
+                 textDecoration: 'none', 
+                 color: '#212B4D', 
+                 padding: '20px', 
+                 margin: '10px', 
+                 backgroundColor: '#F5B6AB', 
+                 borderRadius: '25px' 
+
+            }}>Placeholder</Link>
+
+<Link to="/work" style={{
+                 textDecoration: 'none', 
+                 color: '#212B4D', 
+                 padding: '20px', 
+                 margin: '10px', 
+                 backgroundColor: '#F5B6AB', 
+                 borderRadius: '25px' 
+
+            }}>Placeholder</Link>
+             
             </Container>
         </div>
     )

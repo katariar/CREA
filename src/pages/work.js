@@ -2,9 +2,29 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 
+const Container = styled.div `
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-items: center;
+margin-top: 70px;
+text-align: center;
+padding: 20px;
+`
+
+const Header = styled.div `
+text-align: center;
+background-color: #F5B6AB;
+border-radius: 30px;
+width: 250px;
+color: #212B4D;
+margin: 20px;
+`
+
 const ProjectPic = styled.div`
-background-color: pink;
-border-radius: 10px;
+background-color: #F5B6AB;
+color: #212B4D;
+border-radius: 150px;
 margin: 20px;
 padding: 20px;
 width: 250px;
@@ -15,25 +35,16 @@ height: 250px;
 const Work = () => {
     return (
        
-        <div style={{
-            display: 'flex',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            alignItems: 'center',
-            marginTop: '70px',
-            textAlign: 'center',
-            padding: '20px'
-
-        }}>
-            <h1>Project</h1>
+        <Container>
+            <Header><h3>COFFEE HOUSE</h3></Header>
             <ProjectPic>esimerkki</ProjectPic>
-           <Link to="/participant" style={{ textDecoration: 'none', fontWeight: '700', color: 'black', padding: '5px' }}>pxbs</Link>
-         <p> &#x1F198; &#x1F600;Here pxbs tells you about this project. It was like lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+           <Link to="/participant" style={{ textDecoration: 'none', fontSize: '18px', fontWeight: '700', color: '#212B4D', padding: '5px' }}>PXBS</Link>
+         <p style ={{ color: '#212B4D'}}> &#x1F984; Here pxbs tells you about this project. It was like lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. &#x1F984; </p>
          <br/>
             <br/>
             <br/>
             <br/>
-        </div>
+        </Container>
        
 
     )

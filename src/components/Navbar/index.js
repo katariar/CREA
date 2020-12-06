@@ -1,7 +1,10 @@
 import React from 'react';
-import {Nav, NavLink, NavMenu, NavBtn} from './NavbarElements';
+import {Nav, NavLink, NavMenu} from './NavbarElements';
 import styled from 'styled-components';
-import Home from '../../images/home.svg'
+import Home from '../../images/home-03.svg'
+import Add from '../../images/profile-01.svg';
+import Profile from '../../images/profile-03.svg';
+
 
 const NavContainer = styled.div `
     display: block;
@@ -12,9 +15,14 @@ const NavContainer = styled.div `
     color: white;
 `
 
-const HomeIcon = styled.img `
-width: 40px;
-
+const HomeIcon = styled.img ` 
+width: 100px;
+`
+const AddIcon = styled.img ` 
+width: 100px;
+`
+const ProfileIcon = styled.img ` 
+width: 100px;
 `
 
 const Navbar = () => {
@@ -22,19 +30,17 @@ const Navbar = () => {
         <NavContainer>
           <Nav>
           <NavMenu>
-                <NavLink to="/" activeStyle>
+                <NavLink to="/" activeStyle exact={true}>
                      <HomeIcon src={Home} alt='home' />
                 </NavLink>
                       <NavLink to="/add" activeStyle>
-                          Add
+                          <AddIcon src={Add} alt='add' />
                       </NavLink>
                       <NavLink to="/profile" activeStyle>
-                          Profile
+                          <ProfileIcon src={Profile} alt='profile'/>
                       </NavLink>
                   </NavMenu>
-                  <NavBtn>
-                     
-                  </NavBtn>
+                
              
           </Nav>
         
