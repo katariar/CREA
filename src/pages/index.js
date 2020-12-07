@@ -1,7 +1,6 @@
 import React  from 'react';
 import CategoryButton from '../components/CategoryButton/CategoryButton';
 import styled from 'styled-components';
-import { respondTo } from '../_respondTo';
 
 export const Container = styled.div`
 display: flex;
@@ -10,14 +9,7 @@ margin-top: 120px;
 justify-content: center;
 align-items: center;
 text-align: center;
-
-${respondTo.ms `
-
 `
-}
-
-`
-
 
 
 const Home = () => {
@@ -25,7 +17,7 @@ const Home = () => {
     return (
         <Container>
         
-        <CategoryButton category="LOGO DESIGN" />
+         <CategoryButton category="LOGO DESIGN" />
         <CategoryButton category="WEB DESIGN" />
         <CategoryButton category="TYPOGRAPHY" />
         <CategoryButton category="ILLUSTRATION" />

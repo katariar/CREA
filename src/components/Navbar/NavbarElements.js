@@ -17,11 +17,12 @@ export const NavLink = styled(Link) `
     text-decoration: none;
     height: 100%;
     cursor: pointer;
-    padding: 10px;
+    margin: 30px;
 
     &.active {
         color: #F5B6AB;
-        box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+        box-shadow: 0 0 3px 4px white;
+        border-radius: 60px;
 
     }
 

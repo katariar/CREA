@@ -1,14 +1,20 @@
 import React, { useState } from 'react';
 import {AnimatePresence, motion} from 'framer-motion';
 import styled from 'styled-components';
+import Tipicon from '../../images/logodesign.svg';
 
 const OpenedDiv = styled(motion.div) `
-display: 'flex';
-            flex-direction: 'column';
-            justify-content: 'center';
-            align-items: 'center';
-            padding: '10px';
-            transition: all 0.5s ease-in-out;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 5px;
+margin-bottom: 20px;
+transition: all 0.5s ease-in-out;
+`
+const Icon = styled.img `
+width: 50px;
+margin-right: 15px;
 `
 
 const DayButton = ({day}) => {
@@ -22,12 +28,18 @@ const DayButton = ({day}) => {
     return (
         <>
         <div style={{ 
+        display: 'flex',
         backgroundColor: '#F5B6AB',
-        margin: '20px',
-        padding: '10px',
-        borderRadius: '20px'    
+        margin: '15px',
+        borderRadius: '30px',
+        minWidth: '150px',
+        minHeight: '50px',
+        color: '#212B4D', 
+        textAlign: 'right',
+        JustifyContent: 'center'  
         }}
-        onClick = {() => handleClick()}> {day}</div>
+        onClick = {() => handleClick()}> <Icon src={Tipicon} alt='icon'/> 
+        <div style={{ marginTop: '15px'}}>{day}</div></div>
         <AnimatePresence>{showDay && (<OpenedDiv
          initial={{ opacity: 0, y:'-5%' }}
          animate={{ opacity: 1, y:5 }}

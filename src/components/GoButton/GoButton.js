@@ -7,37 +7,20 @@ import {AnimatePresence, motion} from 'framer-motion'
 const Tips = styled.div `
 border-radius: 20px;
 margin-top: -20px;
-padding: 20px;
 `
 const Upload = styled.div `
-background-color: #F5B6AB;
-margin: 20px;
-padding: 20px;
+background-color: #212B4D;
+margin: 30px 40px 30px 40px;
+padding: 10px;
 border-radius: 20px;
+min-width: 150px;
+color: #212B4D;
 box-shadow: 5px 5px 5px lightgrey;
+`
 
-`
-/*const Day1 = styled.div `
-padding: 7px;
-background: pink;
-margin-bottom: 5px;
-`
-const Day2 = styled.div `
-padding: 7px;
-background: pink;
-margin-bottom: 5px;
-`
-const Day3 = styled.div `
-padding: 7px;
-`
-const Day4 = styled.div `
-padding: 7px;
-`
-const Day5 = styled.div `
-padding: 7px;
-`*/
 const OpenedDiv = styled(motion.div) `
 transition: all 0.7s ease-in-out;
+font-size: 14px;
 `
 
 const GoButton = ({go}) => {
@@ -54,15 +37,16 @@ const GoButton = ({go}) => {
         <div style={{ 
         backgroundColor: '#212B4D',
         color: '#F5B6AB',
-        margin: '20px',
+        margin: '10px 30px 20px 30px',
         padding: '10px',
-        borderRadius: '20px'
+        borderRadius: '20px',
+        minWidth: '150px'
         }} 
-onClick = {() => handleClick()}> {showGo ? '4 D 23 H 59 S' : 'LET´S GO'} {go}</div>
+onClick = {() => handleClick()}> {go}</div>
         <AnimatePresence>{showGo && (<OpenedDiv 
-        initial={{ opacity: 0, y:'-10%' }}
+        initial={{ opacity: 0, y:'-5%' }}
         animate={{ opacity: 1, y:0 }}
-        exit={{ opacity: 0 }}>{`Tips to help your creative process`} <Tips
+        exit={{ opacity: 0 }}><h3 style={{margin: '40px auto 40px auto'}}>{`Tips to help your creative process`}</h3> <Tips
         initial="hidden"
         animate={showGo ? 'visible' : 'hidden'}
         >
@@ -76,11 +60,9 @@ onClick = {() => handleClick()}> {showGo ? '4 D 23 H 59 S' : 'LET´S GO'} {go}</
 
         </Tips>
 
-        <Upload>
-            Upload your work
+        <Upload> 
+        <Link to="/upload" style={{textDecoration: 'none', color: '#F5B6AB'}}>DONE!</Link>
         </Upload>
-        
-        <Link to="/upload">READY</Link>
         </OpenedDiv>)}</AnimatePresence>
         
 

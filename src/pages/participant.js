@@ -13,8 +13,8 @@ color: #212B4D;
 `
 
 const Header = styled.div `
-text-align: center;
-background-color: #F5B6AB;
+display: flex;
+background-color: #F5B6AB; 
 border-radius: 30px;
 width: 250px;
 color: #212B4D;
@@ -33,8 +33,8 @@ const Content2 = styled.div `
 background-color:#F5B6AB;
 margin: 20px;
 padding: 20px;
-height: 250px;
-width: 250px;
+max-height: 250px;
+max-width: 250px;
 border-radius: 150px;
 `
 const Content3 = styled.div `

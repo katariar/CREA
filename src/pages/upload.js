@@ -1,51 +1,56 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import Icon from '../images/logodesign.svg';
 
 const Container = styled.div `
+border: 1px solid black;
 display: flex;
 flex-direction: column;
 justify-content: center;
+padding: 40px;
 align-items: center;
 text-align: center;
-margin-top: 100px;
+margin-top: 70px;
+color: #212B4D; 
 `
-const UploadBox = styled.div `
-background: lightgrey;
-height: 300px;
+
+const Header = styled.div `
+display: flex;
+background-color: #F5B6AB; 
 border-radius: 30px;
+min-width: 250px;
+color: #212B4D;
 margin: 20px;
-padding: 40px;
+box-shadow: 5px 5px 5px lightgrey;
 `
-const Pictures = styled.div `
-background: white;
-margin: 10px;
-padding: 10px;
-border-radius: 20px;
-text-align: center;
+const ProfileIcon = styled.img `
+width: 60px;
+`
+const Wrapper = styled.div `
+background-color: #EFEFEF;
+border-radius: 30px;
+margin: -10px 20px 20px 20px;
+padding-top: 5px;
+min-width: 200px;
+z-index: -1;
 `
 
 const Upload = () => {
     return (
         <>
         <Container>
-                <h3>UPLOAD YOUR WORK</h3>
-            <UploadBox>
-            <Pictures>Upload Pictures + </Pictures>
-            <form>
-                <label>
-                 Description:
-                 <br/>
-                 <br/>
-                <input type="text" name="name" style={{ padding: '20px', borderRadius: '20px', border: 'solid 1px grey'}} />
-                </label>
-                <br/>
-                <br/>
-                <input type="submit" value="Submit" style={{ padding: '10px', borderRadius: '20px', border: 'solid 1px grey'}}  />
-            </form>
-            </UploadBox>
+                <Header><ProfileIcon src={Icon} />
+                <h3 style={{
+                paddingLeft:'15px',
+                fontSize: '16px',
+                marginTop: '20px'}}>
+                UPLOAD YOUR WORK</h3></Header>
+                <Wrapper>
+                    KUVAT
+                </Wrapper>
+
        
-             <Link to="/feed">Go to Feed</Link>
         </Container>
         </>
     )

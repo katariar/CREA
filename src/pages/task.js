@@ -1,37 +1,61 @@
 import React from 'react';
 import styled from 'styled-components';
 import GoButton from '../components/GoButton/GoButton';
+import Icon from '../images/logodesign.svg';
 
 const Container = styled.div `
-padding: 40px;
-text-align: center;
-margin-top: 70px;
-color: #212B4D;
-`
-const Header = styled.div `
 display: flex;
 flex-direction: column;
 justify-content: center;
+padding: 40px;
 align-items: center;
 text-align: center;
-background-color: #F5B6AB;
+margin-top: 70px;
+color: #212B4D;
+background-color: #E8E8E8; 
+`
+const Header = styled.div `
+display: flex;
+background-color: #F5B6AB; 
 border-radius: 30px;
+min-width: 250px;
+color: #212B4D;
+margin: 20px;
+box-shadow: 5px 5px 5px lightgrey;
 `
+const ProfileIcon = styled.img `
+width: 60px;
+`
+
 const Brief = styled.p `
+display: flex;
+justify-content: space-around;
 font-size: 12px;
+padding: 0 15px 0 15px;
 `
+const Wrapper = styled.div `
+background-color: #EFEFEF;
+border-radius: 30px;
+margin: -10px 20px 20px 20px;
+padding-top: 5px;
+min-width: 150px;
+z-index: -1;
+`
+
 const Task = () => {
     return (
         <Container>
         <div>
-            <Header><h3>COFFEE HOUSE</h3></Header>
+        <Header><ProfileIcon src={Icon} /><h3 style={{paddingLeft:'20px'}}>COFFEE HOUSE</h3></Header>
+        <Wrapper>
             <h4>ONE WEEK PROJECT</h4>
             <Brief>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
             </Brief>
      
-        <GoButton go />
-     
+        <GoButton go="LET'S GO!" />
+        <br/>
+        </Wrapper>
        
         <br/>
             <br/>

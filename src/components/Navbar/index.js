@@ -3,7 +3,7 @@ import {Nav, NavLink, NavMenu} from './NavbarElements';
 import styled from 'styled-components';
 import Home from '../../images/home-03.svg'
 import Add from '../../images/profile-01.svg';
-import Profile from '../../images/profile-03.svg';
+import Profile from '../../images/profile-02.svg';
 
 
 const NavContainer = styled.div `
@@ -12,17 +12,19 @@ const NavContainer = styled.div `
     bottom: 0;
     left: 0;
     width: 100%;
-    color: white;
+
+
+
 `
 
 const HomeIcon = styled.img ` 
-width: 100px;
+width: 55px;
 `
 const AddIcon = styled.img ` 
-width: 100px;
+width: 55px;
 `
 const ProfileIcon = styled.img ` 
-width: 100px;
+width: 55px;
 `
 
 const Navbar = () => {
@@ -34,10 +36,10 @@ const Navbar = () => {
                      <HomeIcon src={Home} alt='home' />
                 </NavLink>
                       <NavLink to="/add" activeStyle>
-                          <AddIcon src={Add} alt='add' />
+                          <AddIcon src={Home} alt='add' />
                       </NavLink>
                       <NavLink to="/profile" activeStyle>
-                          <ProfileIcon src={Profile} alt='profile'/>
+                          <ProfileIcon src={Home} alt='profile'/>
                       </NavLink>
                   </NavMenu>
                 
