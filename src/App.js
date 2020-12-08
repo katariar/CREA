@@ -12,11 +12,19 @@ import Work from './pages/work';
 import Participant from './pages/participant';
 import Header from './components/Header/Header';
 import Upload from './pages/upload';
+import ScrollToTop from './components/ScrollToTop';
+import { AnimatePresence } from 'framer-motion';
+import Project from './pages/projects';
+
 
 function App() {
+ 
+  
   return (
     <Router>
+      <ScrollToTop />
       <Header />
+      <AnimatePresence exitBeforeEnter>
       <Switch>
         <Route path='/' exact component={Home} />
         <Route path='/add' component={Add} />
@@ -26,7 +34,9 @@ function App() {
         <Route path='/feed' component={Feed} />
         <Route path='/work' component={Work} />
         <Route path='/participant' component={Participant} />
+        <Route path='/projects' component={Project} />
       </Switch>
+      </AnimatePresence>
       <Navbar/>
       
     </Router>

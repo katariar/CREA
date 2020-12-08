@@ -28,9 +28,7 @@ export const NavLink = styled(Link) `
     }
 
     &.active {
-        color: #F5B6AB;
-        box-shadow: 0 0 3px 4px white;
-        border-radius: 60px;
+       
         .unactiveIcon {
             display: inline-block;
         }

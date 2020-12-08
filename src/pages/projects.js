@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
-import GoButton from '../components/GoButton/GoButton';
 import Icon from '../images/visualidentity.svg';
+import MasterPiece from '../components/Masterpieces/MasterPieces'
 
 const Container = styled.div `
 display: flex;
@@ -36,10 +36,11 @@ padding: 0 15px 0 15px;
 const Wrapper = styled.div `
 background-color: #EFEFEF;
 border-radius: 30px;
-margin: -10px 20px 20px 20px;
+margin: -10px 20px 40px 20px;
 padding-top: 5px;
 max-width: 250px;
 `
+
 const pageVariants = {
     in: {
         opacity: 1,
@@ -58,7 +59,9 @@ const pageTransitions = {
     duration: 1
 }
 
-const Task = () => {
+
+
+const Projects = () => {
     return (
         <motion.div 
         initial="out"
@@ -73,9 +76,9 @@ const Task = () => {
             <Brief>
             <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
             </Brief>
-     
-        <GoButton go="LET'S GO!" />
-        <br/>
+
+        
+            <MasterPiece master="MASTERPIECES" />
         </Wrapper>
        
         <br/>
@@ -88,4 +91,4 @@ const Task = () => {
     )
 }
 
-export default Task
+export default Projects
