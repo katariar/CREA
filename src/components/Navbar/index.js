@@ -33,13 +33,14 @@ const Navbar = () => {
           <Nav>
           <NavMenu>
                 <NavLink to="/" activeStyle exact={true}>
-                     <HomeIcon src={Home} alt='home' />
+                     <HomeIcon className="unactiveIcon" src={Home} alt='home' />
+                     <HomeIcon className="activeIcon" src={Add} alt="home" />
                 </NavLink>
                       <NavLink to="/add" activeStyle>
-                          <AddIcon src={Home} alt='add' />
+                          <AddIcon src={Add} alt='add' />
                       </NavLink>
                       <NavLink to="/profile" activeStyle>
-                          <ProfileIcon src={Home} alt='profile'/>
+                          <ProfileIcon src={Profile} alt='profile'/>
                       </NavLink>
                   </NavMenu>
                 

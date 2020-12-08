@@ -3,6 +3,7 @@ import {Link} from 'react-router-dom';
 import styled from 'styled-components';
 import {AnimatePresence, motion} from 'framer-motion';
 import Logo from '../../images/logodesign.svg';
+import { IconBase } from 'react-icons';
 
 
 
@@ -31,7 +32,7 @@ const LogoIconMain = styled.img `
 width: 60px;
 margin-right: 15px;
 `
-const CategoryButton = ({category}) => {
+const CategoryButton = ({category, icon}) => {
     const [showCategory, setShowCategory] = useState(false)
     console.log(showCategory)
 
@@ -52,7 +53,7 @@ const CategoryButton = ({category}) => {
         fontSize: '16px', 
         textAlign: 'right',
         JustifyContent: 'center'
-        }} onClick = {() => handleClick()}> <LogoIconMain src={Logo} /> 
+        }} onClick = {() => handleClick()}> <LogoIconMain src={icon} /> 
         <div style={{ marginTop: '20px'}}> 
         {category} </div></div>
 
@@ -74,7 +75,7 @@ const CategoryButton = ({category}) => {
         backgroundColor: '#F5B6AB', 
         borderRadius: '30px',
         minWidth: '200px'}}>
-            <LogoIcon src={Logo} alt='logo' />
+            <LogoIcon src={icon} alt='logo' />
             <p style={{paddingLeft: '10px', paddingRight: '10px', fontSize: '12px'}}>COFFEE HOUSE</p></Link>
         
         <Link to="/task" style={{ 

@@ -19,11 +19,25 @@ export const NavLink = styled(Link) `
     cursor: pointer;
     margin: 30px;
 
+    .unactiveIcon {
+        display: none;
+    }
+
+    .activeIcon {
+        display: inline-block;
+    }
+
     &.active {
         color: #F5B6AB;
         box-shadow: 0 0 3px 4px white;
         border-radius: 60px;
+        .unactiveIcon {
+            display: inline-block;
+        }
 
+        .activeIcon {
+            display: none;
+        }
     }
 
 `
