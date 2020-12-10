@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Icon from '../images/logodesign.svg';
 import Profile from '../images/profile-03.svg';
 import { motion } from 'framer-motion';
+import Example from '../images/ikoonen-24.svg';
 
 const Container = styled.div `
 display: flex;
@@ -46,6 +47,11 @@ min-height: 200px;
 padding: 10px;
 border-Radius: 20px;
 `
+const Ikoonen = styled.img `
+width: 200px;
+margin-bottom: 20px;
+margin-top: 20px;
+`
 const PinjaIcon = styled.img `
 width: 40px;
 margin-right: 10px;
@@ -87,7 +93,7 @@ const Work = () => {
                 fontSize: '14px',
                 marginTop: '20px'}}>COFFEE HOUSE</h3></Header>
                 <Wrapper>
-            <ProjectPic>esimerkki</ProjectPic>
+            <ProjectPic><Ikoonen src={Example} /></ProjectPic>
            <ProfileWrapper>
                <PinjaIcon src={Profile} />
                <Link to="/participant" style={{ 

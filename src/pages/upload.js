@@ -1,8 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import Icon from '../images/visualidentity.svg';
+import Icon from '../images/upload.svg';
 import { motion } from 'framer-motion';
+import Load from '../images/add-icon2.svg';
 
 const Container = styled.div `
 display: flex;
@@ -35,12 +36,14 @@ padding: 20px;
 min-width: 250px;
 `
 const GridContainer= styled.div `
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: 50px 50px;
-column-gap: 10px;
-row-gap: 1em;
-margin-top: 20px;
+display: flex;
+background: white;
+margin-top: 30px;
+padding-top: 10px;
+color: lightgray;
+min-height: 150px;
+border-Radius: 15px;
+justify-content: center;
 `
 const Button = styled.div `
 background: #212B4D;
@@ -59,6 +62,9 @@ padding-top: 10px;
 color: lightgray;
 min-height: 150px;
 border-Radius: 15px;
+`
+const UpLoad = styled.img `
+width: 60px;
 `
 const pageVariants = {
     in: {
@@ -90,33 +96,23 @@ const Upload = () => {
                 <Header><ProfileIcon src={Icon} />
                 <h3 style={{
                 paddingLeft:'15px',
-                fontSize: '16px',
+                fontSize: '14px',
                 marginTop: '20px'}}>
                 UPLOAD YOUR WORK</h3></Header>
                 <Wrapper>
                     <GridContainer>
-                    <div style={{
-                     gridColumnStart: '1',
-                     gridColumnEnd: '2', 
-                     gridRowStart: '1', 
-                     gridRowEnd: '3', 
-                     background: 'white',
-                     borderRadius: '15px'}}>One</div>
-                    <div style={{
-                     gridRowEnd: '2',
-                     backgroundColor: 'white',
-                     borderRadius: '15px' }}>Two</div>
-                    <div style={{
-                      gridRowStart: '2', 
-                      backgroundColor: 'white', 
-                      borderRadius: '15px'}}>Three</div>
+                     <UpLoad src={Load} />
                     </GridContainer>
                     <TextHere>
                         Enter your text here...
                     </TextHere>
                     <Button><Link to='/feed' style={{textDecoration: 'none', color: '#F5B6AB'}}>SAVE</Link></Button>
                 </Wrapper>
-
+                <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
        
             </Container>
         

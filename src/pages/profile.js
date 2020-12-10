@@ -2,8 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import Unfinished from '../components/Challenges/ChallengesUnfinished';
 import Done from '../components/Challenges/ChallegesDone';
-import Icon from '../images/profile-03.svg';
+import Icon from '../images/drunken-icon.svg';
 import {motion} from 'framer-motion';
+import MasterPiece from '../components/Masterpieces/MasterPieces';
 
 const Container = styled.div `
 display: flex;
@@ -26,11 +27,14 @@ margin: 20px;
 box-shadow: 5px 5px 5px lightgrey;
 `
 const Wrapper = styled.div `
+display: flex;
+flex-direction: column;
+align-items: center;
 background-color: #EFEFEF;
 border-radius: 30px;
 margin: -10px 20px 20px 20px;
 padding: 20px;
-min-width: 250px;
+max-width: 250px;
 `
 
 const Settings = styled.div `
@@ -40,14 +44,16 @@ border-Radius: 20px;
 font-size: 12px;
 margin-left: 40px;
 margin-right: 40px;
-margin-bottom: 40px;
+margin-bottom: 20px;
 min-width: 100px;
 padding: 10px;
 color: #F5B6AB;
 `
-
 const ProfileIcon = styled.img `
 width: 60px; 
+`
+const ProfileBig = styled.img `
+width: 90px; 
 `
 const pageVariants = {
     in: {
@@ -81,11 +87,14 @@ const Profile = () => {
                 fontSize: '14px',
                 marginTop: '20px'}}>RATAKAAKA</h3></Header>
                 <Wrapper>
-
+            <ProfileBig src={Icon} />
             <p>Lu rusciu te lu mare è troppu forte &#x1F30A;</p>
             <Settings>SETTINGS</Settings>
-           <Unfinished unfinished="Unfinished Projects" />
-            <Done done="Completed Projects" />
+    
+           <Unfinished unfinished="OPEN PROJECTS" />
+            <Done done="DONE PROJECTS" />
+            <MasterPiece master="MASTERPIECES" /> 
+           
             </Wrapper>
             <br/>
             <br/>

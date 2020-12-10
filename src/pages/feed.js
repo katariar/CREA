@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Icon from '../images/visualidentity.svg';
 import Profile from '../images/drunken-icon.svg';
 import { motion } from 'framer-motion';
+import Example from '../images/ikoonen-24.svg';
 
 const Container = styled.div `
 display: flex;
@@ -45,6 +46,9 @@ color: lightgray;
 min-height: 200px;
 padding: 10px;
 border-Radius: 20px;
+`
+const Ikoonen = styled.img `
+width: 200px;
 `
 const KaakaIcon = styled.img `
 width: 40px;
@@ -97,7 +101,7 @@ const Feed = () => {
                 fontSize: '14px',
                 marginTop: '20px'}}>COFFEE HOUSE</h3></Header>
                 <Wrapper>
-            <ProjectPic>esimerkki</ProjectPic>
+            <ProjectPic> <Ikoonen src={Example} /></ProjectPic>
            <ProfileWrapper>
                <KaakaIcon src={Profile} />
                <Link to="/profile" style={{ 

@@ -10,7 +10,7 @@ flex-direction: column;
 justify-content: center;
 padding: 40px;
 align-items: center;
-text-align: center;
+text-align: center; 
 margin-top: 0;
 color: #212B4D;
 font-size: 14px; 

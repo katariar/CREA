@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Icon from '../images/profile-03.svg';
 import { motion } from 'framer-motion';
+import Example from '../images/ikoonen-24.svg';
 
 const Container = styled.div `
 display: flex;
@@ -25,22 +26,7 @@ margin: 20px;
 box-shadow: 5px 5px 5px lightgrey;
 `
 
-const Content1 = styled.div `
-background-color: #F5B6AB;
-margin: 20px;
-padding: 20px;
-max-height: 250px;
-max-width: 250px;
-border-radius: 150px;
-`
-const Content2 = styled.div `
-background-color:#F5B6AB;
-margin: 20px;
-padding: 20px;
-max-height: 250px;
-max-width: 250px;
-border-radius: 150px;
-`
+
 const ProfileIcon = styled.img `
 width: 60px;
 `
@@ -51,18 +37,25 @@ margin: -10px 20px 20px 20px;
 padding: 20px;
 min-width: 250px;
 `
-const Content3 = styled.div `
-background-color: #F5B6AB;
-margin: 20px;
-padding: 20px;
-max-height: 250px;
-max-width: 250px;
-border-radius: 150px;
-`
 const IgButton = styled.a `
 text-decoration: none;
 color: #212B4D;
 `
+const ProjectPic = styled.div`
+background: white;
+margin-top: 10px;
+margin-bottom: 20px;
+color: lightgray;
+min-height: 200px;
+padding: 10px;
+border-Radius: 20px;
+`
+const Ikoonen = styled.img `
+width: 200px;
+margin-bottom: 20px;
+margin-top: 20px;
+`
+
 const pageVariants = {
     in: {
         opacity: 1,
@@ -98,9 +91,7 @@ const Participant = () => {
                 <Wrapper>
             <p>My spirit animal is raccoon &#x1F99D;</p>
             <p>Instagram <IgButton href="https://www.instagram.com/pxbs/" target="_blank">@pxbs</IgButton></p>
-            <Content1>Placeholder</Content1>
-            <Content2>Placeholder</Content2>
-            <Content3>Placeholder</Content3>
+            <ProjectPic> <Ikoonen src={Example} /> <Ikoonen src={Example} /><Ikoonen src={Example} /></ProjectPic>
             </Wrapper>
             <br/>
             <br/>

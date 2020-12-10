@@ -125,6 +125,11 @@ const Add = () => {
                     <ProjectIcon>PROJECT ICON</ProjectIcon>
                     <SaveLink><Link to='/' style={{textDecoration: 'none', color: '#F5B6AB'}}>SAVE</Link></SaveLink>
                 </Wrapper>
+                <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
 
        
         </Container>

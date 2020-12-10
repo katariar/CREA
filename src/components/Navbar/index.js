@@ -20,13 +20,13 @@ const NavContainer = styled.div `
 `
 
 const HomeIcon = styled.img ` 
-width: 55px;
+width: 65px;
 `
 const AddIcon = styled.img ` 
-width: 55px;
+width: 65px;
 `
 const ProfileIcon = styled.img ` 
-width: 55px;
+width: 65px;
 `
 
 const Navbar = () => {
