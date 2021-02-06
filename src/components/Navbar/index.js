@@ -2,9 +2,11 @@ import React from 'react';
 import {Nav, NavLink, NavMenu} from './NavbarElements';
 import styled from 'styled-components';
 import Home from '../../images/home-03.svg'
-import Add from '../../images/profile-01.svg';
-import Profile from '../../images/profile-02.svg';
-
+import HomeActive from '../../images/home-01.svg';
+import Add from '../../images/add-icon3.svg'
+import AddActive from '../../images/ass-icon.svg';
+import Profile from '../../images/profile-03.svg';
+import ProfileActive from '../../images/profile-01.svg';
 
 const NavContainer = styled.div `
     display: block;
@@ -18,13 +20,13 @@ const NavContainer = styled.div `
 `
 
 const HomeIcon = styled.img ` 
-width: 55px;
+width: 65px;
 `
 const AddIcon = styled.img ` 
-width: 55px;
+width: 65px;
 `
 const ProfileIcon = styled.img ` 
-width: 55px;
+width: 65px;
 `
 
 const Navbar = () => {
@@ -33,13 +35,16 @@ const Navbar = () => {
           <Nav>
           <NavMenu>
                 <NavLink to="/" activeStyle exact={true}>
-                     <HomeIcon src={Home} alt='home' />
+                     <HomeIcon className="unactiveIcon" src={HomeActive} alt='home' />
+                     <HomeIcon className="activeIcon" src={Home} alt="home" />
                 </NavLink>
                       <NavLink to="/add" activeStyle>
-                          <AddIcon src={Home} alt='add' />
+                          <AddIcon className="unactiveIcon" src={AddActive} alt='add' />
+                          <AddIcon className="activeIcon" src={Add} alt='add'/>
                       </NavLink>
                       <NavLink to="/profile" activeStyle>
-                          <ProfileIcon src={Home} alt='profile'/>
+                          <ProfileIcon className="unactiveIcon" src={ProfileActive} alt='profile'/>
+                          <ProfileIcon className="activeIcon" src={Profile} alt='profile'/>
                       </NavLink>
                   </NavMenu>
                 

@@ -9,8 +9,9 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 padding: 5px;
-margin-bottom: 20px;
+margin: 10px;
 transition: all 0.5s ease-in-out;
+font-size: 12px;
 `
 const Icon = styled.img `
 width: 50px;
@@ -30,7 +31,7 @@ const DayButton = ({day}) => {
         <div style={{ 
         display: 'flex',
         backgroundColor: '#F5B6AB',
-        margin: '15px',
+        margin: '25px 25px 10px 25px',
         borderRadius: '30px',
         minWidth: '150px',
         minHeight: '50px',
@@ -44,7 +45,7 @@ const DayButton = ({day}) => {
          initial={{ opacity: 0, y:'-5%' }}
          animate={{ opacity: 1, y:5 }}
          exit={{ opacity: 0 }}
-        >{`A Very Good and Useful Tip!`}
+        >{`A Very Good and Useful Tip! It says that lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.`}
        </OpenedDiv>)}</AnimatePresence>
         </>
     )
